@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "img2dataset_test"
+version = "0.1.0"
+description = "laion2B-multi-korean-subset 데이터에 대해 img2dataset을 테스트 하는 용도"
+authors = ["dowon <ks2515@naver.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+img2dataset = "^1.32"
+pyspark = "^3.3"
+
+[tool.poetry.dev-dependencies]
+black = ">=22.3.0"
+flake8 = "*"
+flake8-bugbear = "*"
+mypy = "*"
+isort = "*"
+pre-commit = "*"
+ipykernel = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
